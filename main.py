@@ -1,9 +1,11 @@
 import src.constants as constants
+import src.logic as logic
 
 
-def test_setup():
-    print(f"{constants.RED}Esto es rojo{constants.RESET}")
+def main():
+    print(f"{constants.RED}{logic.parse_time_to_seconds("01:30:45")}{constants.RESET}")
+    print(f"{constants.GREEN}{logic.get_time_components(5445)}{constants.RESET}")
 
 
 if __name__ == "__main__":
-    test_setup()
+    main()
